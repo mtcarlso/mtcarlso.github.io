@@ -1,0 +1,58 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+html,
+body {
+  height: 100%;
+  background-color: #33A1DE;
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+h1 {
+	font-size: 6rem;
+	font-family: 'Bitter', serif;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -40px;
+  /* Pad bottom by footer height */
+  padding: 96px 0 60px;
+}
+
+.logo {
+	height:192px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  padding: 16px;
+  height: 40px;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
