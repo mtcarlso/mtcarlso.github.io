@@ -8,9 +8,11 @@
 html,
 body {
   height: 100%;
-  background-color: #33A1DE;
-  color: white;
+  /* background-color: #33A1DE; */
+  color: gray;
   font-family: 'Droid Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -20,17 +22,61 @@ h1 {
 }
 
 /* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
+#hero {
+  min-height: 480px;
+  /* height: auto; */
   /* Negative indent footer by its height */
-  margin: 0 auto -40px;
+  /* margin: 0 auto -40px; */
   /* Pad bottom by footer height */
-  padding: 96px 0 60px;
+  padding: 8rem;
+  text-align: center;
+  margin-bottom: 7rem;
 }
 
+#hero2 {
+  min-height: 480px;
+  /* height: auto; */
+  /* Negative indent footer by its height */
+  /* margin: 0 auto -40px; */
+  /* Pad bottom by footer height */
+  padding: 8rem;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+#hero h1 {
+  position: absolute;
+  bottom: 5rem;
+  font-size: 4rem;
+  padding: 0rem 4rem 4rem;
+}
+
+#partners.row {
+  margin-top: 2rem !important;
+}
+
+#partners > div > .img-responsive {
+  max-height: 50px !important;
+  margin: 2rem auto;
+  transform: translateY(-50%);
+}
+
+.row {
+  padding: 0 4rem;
+}
+.row.padded {
+  padding: 4rem;
+}
+.row.padded .col-md-6 {
+  padding: 6rem;
+}
 .logo {
 	height:192px;
+}
+
+.header_logo {
+  fill: #33A1DE;
+  height:12px;
 }
 
 /* Set the fixed height of the footer here */
@@ -44,15 +90,41 @@ a {
 	text-decoration: underline;
 }
 
+.btn-primary {
+  text-decoration: none;
+}
+.navbar-default .navbar-brand {
+  /* background-color: #33A1DE; */
+  color: #33A1DE !important;
+  text-decoration: none;
+  font-family: 'Bitter', serif;
+}
+
+.navbar-default {
+  margin: 1rem;
+  background-color: white;
+  box-shadow: none;
+  background-image: none;
+  background-repeat: none;
+  border-radius: 0;
+  border-color: white;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #33A1DE !important;
+}
 
 
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 5rem;
+    padding: 4rem;
+  }
+  #partners > div  {
 
-
-
-
-
-
-
-
-
-
+    min-height: 50px !important;
+    padding: 2rem auto;
+    /* //transform: translateY(-50%); */
+  }
+}
